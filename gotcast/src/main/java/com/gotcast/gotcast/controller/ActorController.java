@@ -31,6 +31,7 @@ public class ActorController {
     @GetMapping("/getActors")
     public List<Actor> getMsg() {
         List<Actor> list = repo.findAll();
+        System.out.println("haha");
         return list;
     }
 
